@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { motion, type Variants } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import { ArrowUpRight, MessageCircle, UserSearch } from "lucide-react";
@@ -38,8 +39,8 @@ const highlights: Highlight[] = [
 const socialLinks: SocialLink[] = [
   {
     label: "LinkedIn",
-    handle: "Casper Lightman",
-    href: "https://linkedin.com/in/casperlightman",
+    handle: "Lucas CHaves",
+    href: "https://www.linkedin.com/in/lucas-chaves-2a9260254/",
     icon: UserSearch,
   },
   {
@@ -196,10 +197,10 @@ export function GlassmorphismPortfolioBlock() {
                     className="space-y-1"
                   >
                     <h3 className="text-2xl font-semibold tracking-tight text-foreground">
-                      Casper Lightman
+                      Lucas Chaves
                     </h3>
                     <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/45">
-                      Product Designer · Motion Director
+                      DESENVOLVEDOR FULL STACK · SISTEMAS WEB · AUTOMAÇÕES
                     </p>
                   </motion.div>
 
@@ -210,8 +211,10 @@ export function GlassmorphismPortfolioBlock() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="mt-4 max-w-sm text-sm leading-relaxed text-foreground/70"
                   >
-                    Partnering with future-facing teams to choreograph
-                    interfaces that feel cinematic yet effortless.
+                    Construo sistemas modernos e soluções digitais com foco em
+                    performance, clareza e resultado. Meu trabalho envolve
+                    frontend, backend, banco de dados, automações e integrações
+                    para negócios que querem evoluir com tecnologia.
                   </motion.p>
                 </div>
 
