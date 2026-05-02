@@ -6,12 +6,12 @@ type BadgeVariant = "default" | "secondary" | "destructive" | "outline";
 
 const badgeVariants: Record<BadgeVariant, string> = {
   default:
-    "border-transparent bg-slate-900 text-slate-50 hover:bg-slate-900/80",
+    "border-transparent bg-[rgb(var(--portfolio-accent))/20] text-[rgb(var(--portfolio-accent))] hover:bg-[rgb(var(--portfolio-accent))/30]",
   secondary:
-    "border-transparent bg-slate-100 text-slate-900 hover:bg-slate-100/80",
+    "border-transparent bg-[rgb(var(--portfolio-surface))] text-[rgb(var(--portfolio-fg))] hover:bg-[rgb(var(--portfolio-surface))/80]",
   destructive:
     "border-transparent bg-red-600 text-white hover:bg-red-600/80",
-  outline: "text-foreground",
+  outline: "border-[rgb(var(--portfolio-border))] text-[rgb(var(--portfolio-fg))]",
 };
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {

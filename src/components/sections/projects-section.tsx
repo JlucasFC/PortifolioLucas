@@ -8,7 +8,7 @@ type ProjectsSectionProps = {
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section id="projetos" className="bg-slate-950">
+    <section id="projetos" className="bg-[rgb(var(--portfolio-bg))]">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-8">
         <SectionTitle
           overline="Projetos"

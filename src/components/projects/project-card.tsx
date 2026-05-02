@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="overflow-hidden rounded-lg border border-slate-700 bg-slate-900/70 shadow-sm">
+    <article className="overflow-hidden rounded-lg border border-[rgb(var(--portfolio-border))] bg-[rgb(var(--portfolio-surface))/65] shadow-[0_16px_40px_rgba(0,0,0,0.35)]">
       <Image
         src={project.imageUrl}
         alt={project.title}
@@ -18,15 +18,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
       />
       <div className="space-y-4 p-5">
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-slate-100">{project.title}</h3>
-          <p className="text-sm leading-6 text-slate-300">{project.description}</p>
+          <h3 className="text-xl font-semibold text-[rgb(var(--portfolio-fg))]">{project.title}</h3>
+          <p className="text-sm leading-6 text-[rgb(var(--portfolio-muted))]">{project.description}</p>
         </div>
 
         <ul className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <li
               key={tech}
-              className="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-xs font-medium text-slate-200"
+              className="rounded-md border border-[rgb(var(--portfolio-border))] bg-black/30 px-2 py-1 text-xs font-medium text-[rgb(var(--portfolio-fg))]"
             >
               {tech}
             </li>
@@ -36,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex gap-3 text-sm font-medium">
           {project.projectUrl ? (
             <a
-              className="text-cyan-300 hover:text-cyan-200"
+              className="text-[rgb(var(--portfolio-accent))] hover:text-[rgb(var(--portfolio-fg))]"
               href={project.projectUrl}
               target="_blank"
               rel="noreferrer"
@@ -46,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           ) : null}
           {project.githubUrl ? (
             <a
-              className="text-slate-200 hover:text-white"
+              className="text-[rgb(var(--portfolio-muted))] hover:text-[rgb(var(--portfolio-fg))]"
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"

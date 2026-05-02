@@ -2,7 +2,7 @@ import { SplineSceneBasic } from "@/components/ui/demo";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen border-b border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-900">
+    <section className="min-h-screen bg-gradient-to-br from-black via-[rgb(var(--portfolio-bg))] to-[rgb(var(--portfolio-accent-deep))/35]">
       <div className="h-full min-h-screen">
         <SplineSceneBasic />
       </div>

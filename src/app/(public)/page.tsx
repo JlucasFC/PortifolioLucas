@@ -9,13 +9,13 @@ export default async function HomePage() {
   const projects = await listProjects();
 
   return (
-    <main className="portfolio-theme min-h-screen bg-slate-950 text-slate-100">
+    <main className="portfolio-theme min-h-screen bg-[rgb(var(--portfolio-bg))] text-[rgb(var(--portfolio-fg))]">
       <HeroSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection projects={projects} />
       <ContactSection />
-      <footer className="border-t border-slate-800 bg-slate-950/80 py-6 text-center text-sm text-slate-400">
+      <footer className="border-t border-[rgb(var(--portfolio-border))] bg-black/60 py-6 text-center text-sm text-[rgb(var(--portfolio-muted))]">
         © {new Date().getFullYear()} JLucas. Todos os direitos reservados.
       </footer>
     </main>

@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --portfolio-bg: 3 6 10;
+  --portfolio-bg-elevated: 10 16 24;
+  --portfolio-surface: 14 22 32;
+  --portfolio-fg: 236 242 248;
+  --portfolio-muted: 149 161 178;
+  --portfolio-border: 34 48 66;
+  --portfolio-accent: 56 189 248;
+  --portfolio-accent-deep: 14 116 144;
 }
 
 @theme inline {
@@ -24,8 +32,8 @@ body {
 }
 
 .portfolio-theme {
-  --background: #020617;
-  --foreground: #e2e8f0;
+  --background: rgb(var(--portfolio-bg));
+  --foreground: rgb(var(--portfolio-fg));
 }
 
 @keyframes spotlight {
