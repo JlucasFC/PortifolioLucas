@@ -7,6 +7,8 @@ type LoginPageProps = {
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const params = await searchParams;
   const hasError = params.error === "invalid_credentials";
+  const fieldClassName =
+    "w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-black placeholder:text-black placeholder:opacity-70";
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-slate-100 px-4">
@@ -26,14 +28,14 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
             name="email"
             placeholder="Email"
             required
-            className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+            className={fieldClassName}
           />
           <input
             type="password"
             name="password"
             placeholder="Senha"
             required
-            className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm"
+            className={fieldClassName}
           />
           <button
             type="submit"

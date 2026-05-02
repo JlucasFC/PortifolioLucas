@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="overflow-hidden rounded-lg border border-[rgb(var(--portfolio-border))] bg-[rgb(var(--portfolio-surface))/65] shadow-[0_16px_40px_rgba(0,0,0,0.35)]">
+    <article className="h-full overflow-hidden rounded-lg border border-[rgb(var(--portfolio-border))] bg-[rgb(var(--portfolio-surface))/65] shadow-[0_16px_40px_rgba(0,0,0,0.35)]">
       <Image
         src={project.imageUrl}
         alt={project.title}

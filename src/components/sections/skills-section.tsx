@@ -13,7 +13,7 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <section className="bg-[rgb(var(--portfolio-bg-elevated))/65]">
+    <section className="bg-black">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-8">
         <SectionTitle overline="Skills" title="Stack e especialidades" />
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

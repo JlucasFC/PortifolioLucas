@@ -81,10 +81,10 @@ const itemVariants: Variants = {
 
 export function GlassmorphismPortfolioBlock() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[rgb(var(--portfolio-bg-elevated))] via-[rgb(var(--portfolio-bg-elevated))] to-[rgb(var(--portfolio-bg))] px-6 py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-black px-6 py-24 lg:py-32">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[rgb(var(--portfolio-accent))/20] via-[rgb(var(--portfolio-bg-elevated))/45] to-transparent blur-2xl"
+        className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[rgb(var(--portfolio-accent))/18] via-black/40 to-transparent blur-2xl"
       />
       <div className="mx-auto max-w-6xl">
         <motion.div
