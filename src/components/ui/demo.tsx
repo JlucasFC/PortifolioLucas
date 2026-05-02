@@ -16,7 +16,7 @@ export function SplineSceneBasic() {
             Lucas Chaves 
           </h1>
           <p className="mt-4 max-w-lg text-neutral-300">
-            Portfolio profissional com foco em performance, escalabilidade e
+            Portifolio profissional com foco em performance, escalabilidade e
             produtos digitais bem construidos.
           </p>
         </div>
