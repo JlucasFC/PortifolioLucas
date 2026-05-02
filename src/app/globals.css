@@ -23,6 +23,11 @@ body {
   font-family: "Segoe UI", "Inter", "Helvetica Neue", sans-serif;
 }
 
+.portfolio-theme {
+  --background: #020617;
+  --foreground: #e2e8f0;
+}
+
 @keyframes spotlight {
   0% {
     opacity: 0;

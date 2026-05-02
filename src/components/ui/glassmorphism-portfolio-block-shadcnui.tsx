@@ -1,7 +1,6 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { motion, type Variants } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import { ArrowUpRight, MessageCircle, UserSearch } from "lucide-react";

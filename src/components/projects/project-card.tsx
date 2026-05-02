@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+    <article className="overflow-hidden rounded-lg border border-slate-700 bg-slate-900/70 shadow-sm">
       <Image
         src={project.imageUrl}
         alt={project.title}
@@ -18,15 +18,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
       />
       <div className="space-y-4 p-5">
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-slate-900">{project.title}</h3>
-          <p className="text-sm leading-6 text-slate-600">{project.description}</p>
+          <h3 className="text-xl font-semibold text-slate-100">{project.title}</h3>
+          <p className="text-sm leading-6 text-slate-300">{project.description}</p>
         </div>
 
         <ul className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <li
               key={tech}
-              className="rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-xs font-medium text-slate-700"
+              className="rounded-md border border-slate-700 bg-slate-800 px-2 py-1 text-xs font-medium text-slate-200"
             >
               {tech}
             </li>
@@ -36,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex gap-3 text-sm font-medium">
           {project.projectUrl ? (
             <a
-              className="text-cyan-700 hover:text-cyan-900"
+              className="text-cyan-300 hover:text-cyan-200"
               href={project.projectUrl}
               target="_blank"
               rel="noreferrer"
@@ -46,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           ) : null}
           {project.githubUrl ? (
             <a
-              className="text-slate-700 hover:text-slate-900"
+              className="text-slate-200 hover:text-white"
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
