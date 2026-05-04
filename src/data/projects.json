@@ -1,5 +1,21 @@
 [
   {
+    "id": "ea36b3e2-fe68-409f-a726-d88cd8633410",
+    "title": "Te gosto muitaum",
+    "description": "Apenas pra dizer q te gosto sz",
+    "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQGza4JOy3-okg/profile-displayphoto-scale_400_400/B4DZwp8s_YG4Ak-/0/1770230309235?e=1779321600&v=beta&t=7BgjqLElKWno2FCSaShFvzqtnVLSrj0504LxHEx6gu0",
+    "technologies": [
+      "Love",
+      "Love+",
+      "Love++"
+    ],
+    "projectUrl": "",
+    "githubUrl": "",
+    "featured": false,
+    "createdAt": "2026-05-02T04:22:05.547Z",
+    "updatedAt": "2026-05-02T04:24:41.702Z"
+  },
+  {
     "id": "83b09c9d-95fe-4fc0-a5bc-f2be6df77fd1",
     "title": "Landing Page transportadora",
     "description": "Landing page para transportadora",
