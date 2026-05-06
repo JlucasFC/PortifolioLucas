@@ -17,8 +17,8 @@
   },
   {
     "id": "83b09c9d-95fe-4fc0-a5bc-f2be6df77fd1",
-    "title": "Landing Page transportadora",
-    "description": "Landing page para transportadora",
+    "title": "Landing Page PetShop",
+    "description": "Landing page para Petshop",
     "imageUrl": "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/49e17fbc6516b5cb94698be7dec238c4.jpg",
     "technologies": [
       "NextJs",
@@ -29,7 +29,7 @@
     "githubUrl": "",
     "featured": false,
     "createdAt": "2026-05-02T03:20:10.093Z",
-    "updatedAt": "2026-05-02T03:20:10.093Z"
+    "updatedAt": "2026-05-06T20:52:54.622Z"
   },
   {
     "id": "b549cc3b-864c-49f3-95c8-f294f2a5cd07",

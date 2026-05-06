@@ -6,11 +6,11 @@ import { Spotlight } from "@/components/ui/spotlight";
 
 export function SplineSceneBasic() {
   return (
-    <Card className="relative flex min-h-screen max-h-screen w-full overflow-hidden border-[rgb(var(--portfolio-border))] bg-black/[0.96] px-6">
+    <Card className="relative min-h-[100svh] w-full overflow-hidden border-[rgb(var(--portfolio-border))] bg-black/[0.96]">
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="rgb(var(--portfolio-accent))" />
 
-      <div className="flex min-h-screen h-full flex-col md:flex-row">
-        <div className="relative z-10 flex flex-1 flex-col justify-center p-8">
+      <div className="grid min-h-[100svh] w-full grid-rows-2 md:grid-cols-2 md:grid-rows-1">
+        <div className="relative z-10 flex min-h-0 flex-col justify-center p-6 sm:p-8 lg:p-12">
           <h2 className="bg-gradient-to-b from-[rgb(var(--portfolio-fg))] to-[rgb(var(--portfolio-muted))] bg-clip-text text-3xl font-bold text-transparent md:text-4xl">desenvolvedor full stack</h2>
           <h1 className="bg-gradient-to-b from-[rgb(var(--portfolio-fg))] to-[rgb(var(--portfolio-muted))] bg-clip-text text-3xl font-bold text-transparent md:text-5xl">
             Lucas Chaves 
@@ -21,7 +21,7 @@ export function SplineSceneBasic() {
           </p>
         </div>
 
-        <div className="relative flex-1">
+        <div className="relative min-h-0">
           <SplineScene
             scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
             className="h-full w-full"
