@@ -6,7 +6,9 @@ import { clearAdminSession } from "@/lib/auth";
 import { ROUTES } from "@/lib/constants";
 import { removeProjectImageUpload, saveProjectImageUpload } from "@/lib/project-image";
 import { parseProjectFormData } from "@/lib/project-form";
+import { parseSiteLinksFormData } from "@/lib/site-links-form";
 import { createProject, getProjectById, removeProject, updateProject } from "@/services/projects";
+import { updateSiteLinks } from "@/services/site-links";
 
 export async function createProjectAction(formData: FormData) {
   const imageUrl = await saveProjectImageUpload(formData);
@@ -43,6 +45,13 @@ export async function deleteProjectAction(formData: FormData) {
   const currentProject = await getProjectById(id);
   await removeProject(id);
   await removeProjectImageUpload(currentProject?.imageUrl);
+  revalidatePath(ROUTES.home);
+  revalidatePath(ROUTES.admin);
+}
+
+export async function updateSiteLinksAction(formData: FormData) {
+  const input = parseSiteLinksFormData(formData);
+  await updateSiteLinks(input);
   revalidatePath(ROUTES.home);
   revalidatePath(ROUTES.admin);
 }

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { motion, type Variants } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import { ArrowUpRight, MessageCircle, UserSearch } from "lucide-react";
+import type { SiteLinks } from "@/types/site-links";
 
 type Highlight = {
   title: string;
@@ -15,6 +16,10 @@ type SocialLink = {
   handle: string;
   href: string;
   icon: LucideIcon;
+};
+
+type GlassmorphismPortfolioBlockProps = {
+  siteLinks: SiteLinks;
 };
 
 const highlights: Highlight[] = [
@@ -33,27 +38,6 @@ const highlights: Highlight[] = [
     description:
       "Disponível para projetos freelance, desenvolvimento de sistemas, landing pages, automações e soluções digitais para pequenos negócios e operações em crescimento.",
   },
-];
-
-const socialLinks: SocialLink[] = [
-  {
-    label: "LinkedIn",
-    handle: "Lucas CHaves",
-    href: "https://www.linkedin.com/in/lucas-chaves-2a9260254/",
-    icon: UserSearch,
-  },
-  {
-    label: "WhatsApp",
-    handle: "Whatssap",
-    href: "https://dribbble.com/caspermotion",
-    icon: MessageCircle,
-  },
-  // {
-  //   label: "GitHub",
-  //   handle: "casper-studio",
-  //   href: "https://github.com/casper-studio",
-  //   icon: GitHub,
-  // },
 ];
 
 const listVariants: Variants = {
@@ -79,7 +63,22 @@ const itemVariants: Variants = {
   },
 };
 
-export function GlassmorphismPortfolioBlock() {
+export function GlassmorphismPortfolioBlock({ siteLinks }: GlassmorphismPortfolioBlockProps) {
+  const socialLinks: SocialLink[] = [
+    {
+      label: "LinkedIn",
+      handle: "Lucas Chaves",
+      href: siteLinks.linkedinUrl,
+      icon: UserSearch,
+    },
+    {
+      label: "WhatsApp",
+      handle: "WhatsApp",
+      href: siteLinks.whatsappUrl,
+      icon: MessageCircle,
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-black px-6 py-24 lg:py-32">
       <div

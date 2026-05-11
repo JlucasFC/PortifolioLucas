@@ -1,15 +1,18 @@
 import { ProjectForm } from "@/components/admin/project-form";
 import { ProjectList } from "@/components/admin/project-list";
+import { SiteLinksForm } from "@/components/admin/site-links-form";
 import {
   createProjectAction,
   deleteProjectAction,
   logoutAction,
+  updateSiteLinksAction,
   updateProjectAction,
 } from "@/app/(admin)/admin/actions";
 import { listProjects } from "@/services/projects";
+import { getSiteLinks } from "@/services/site-links";
 
 export default async function AdminPage() {
-  const projects = await listProjects();
+  const [projects, siteLinks] = await Promise.all([listProjects(), getSiteLinks()]);
 
   return (
     <main className="min-h-screen bg-slate-100 px-4 py-8 sm:px-8">
@@ -28,6 +31,11 @@ export default async function AdminPage() {
             </button>
           </form>
         </header>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-slate-900">Links dos botoes</h2>
+          <SiteLinksForm action={updateSiteLinksAction} siteLinks={siteLinks} />
+        </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-semibold text-slate-900">Novo projeto</h2>

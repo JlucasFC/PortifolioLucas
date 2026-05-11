@@ -1,4 +1,10 @@
-export function ContactSection() {
+import type { SiteLinks } from "@/types/site-links";
+
+type ContactSectionProps = {
+  siteLinks: SiteLinks;
+};
+
+export function ContactSection({ siteLinks }: ContactSectionProps) {
   return (
     <section id="contato" className="border-t border-[rgb(var(--portfolio-border))] bg-gradient-to-br from-black via-[rgb(var(--portfolio-bg))] to-[rgb(var(--portfolio-accent-deep))/25]">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-8">
@@ -7,10 +13,10 @@ export function ContactSection() {
           Aberto a oportunidades de produto, consultoria tecnica e projetos fullstack.
         </p>
         <a
-          href="mailto:contato@jlucas.dev"
+          href={siteLinks.contactUrl}
           className="mt-6 inline-flex rounded-md bg-[rgb(var(--portfolio-accent))] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[rgb(var(--portfolio-accent))/85]"
         >
-          contato@jlucas.dev
+          {siteLinks.contactLabel}
         </a>
       </div>
     </section>
