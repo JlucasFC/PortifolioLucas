@@ -4,13 +4,13 @@ function asString(value: FormDataEntryValue | null) {
   return typeof value === "string" ? value.trim() : "";
 }
 
-export function parseProjectFormData(formData: FormData): ProjectInput {
+export function parseProjectFormData(formData: FormData, imageUrl: string): ProjectInput {
   const technologiesRaw = asString(formData.get("technologies"));
 
   return {
     title: asString(formData.get("title")),
     description: asString(formData.get("description")),
-    imageUrl: asString(formData.get("imageUrl")),
+    imageUrl,
     technologies: technologiesRaw
       .split(",")
       .map((item) => item.trim())

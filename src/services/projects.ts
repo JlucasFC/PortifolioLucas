@@ -31,6 +31,11 @@ export async function listProjects() {
   return projects.sort((a, b) => Number(b.featured) - Number(a.featured));
 }
 
+export async function getProjectById(id: string) {
+  const projects = await readProjects();
+  return projects.find((project) => project.id === id);
+}
+
 export async function createProject(input: ProjectInput) {
   const projects = await readProjects();
   const now = new Date().toISOString();

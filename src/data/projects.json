@@ -51,7 +51,7 @@
     "id": "11c29b8a-6587-4789-b357-2cb4963916eb",
     "title": "Lucas Portifolio",
     "description": "Portifolio profissional Full Stack",
-    "imageUrl": "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/49e17fbc6516b5cb94698be7dec238c4.jpg",
+    "imageUrl": "/uploads/projects/3524e798-cc2a-4bc2-bd20-62bfce162f16.jpg",
     "technologies": [
       "NextJs",
       "TypeScript",
@@ -61,6 +61,6 @@
     "githubUrl": "",
     "featured": true,
     "createdAt": "2026-05-02T02:55:54.151Z",
-    "updatedAt": "2026-05-02T02:56:47.007Z"
+    "updatedAt": "2026-05-11T16:43:33.712Z"
   }
 ]
